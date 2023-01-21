@@ -1,0 +1,104 @@
+.footer {
+    padding-top: 28px;
+    text-align: center;
+    background-color: #f5f5fa;
+    &__address {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+        padding-bottom: 10px;
+    }
+    &__map {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colourBlue;
+    }
+    &__media {
+        display: block;
+        padding: 20px 0 6px;
+    }
+    &__phone {
+        font-size: 16px;
+        line-height: 20px;
+        color: #46466e;
+        text-decoration: none;
+        padding: 7px 7px;
+    }
+    &__mail {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colourBlue;
+        padding: 10px 0 30px;
+        text-decoration: none;
+    }
+    &__bottom {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #b3b3ba;
+        padding: 7px 7px;
+    }
+}
+.footer--hp{
+    padding-top: 18px;
+}
+@media (min-width: 763px){
+    .footer {
+        display: grid;
+        justify-content: center;
+        &__address {
+            padding: 0;
+            display: inline-flex;
+
+            &::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #e6e6f0;
+                margin: 6px;
+                align-items: center;
+            }
+        }
+        &__phone {
+            display: inline-flex;
+
+            &::after,
+            &::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #e6e6f0;
+                margin: 6px;
+                align-items: center;
+            }
+        }
+        .first {
+            display: flex;
+            align-items: center;
+        }
+        .second {
+            display: flex;
+            align-items: center;
+        }
+        &__mail {
+            padding: 0;
+        }
+    }
+}
+@media (min-width: 992px){
+    .footer {
+        grid-template-columns: 1fr min-content;
+        grid-template-rows: min-content min-content;
+        &__bottom {
+            grid-column: 2/4;
+            grid-row: 1/2;
+        }
+    }
+}

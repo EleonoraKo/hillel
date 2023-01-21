@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    min-width: 375px;
+   
+}
+.container {
+    max-width: 1350px;
+    min-width: 35px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1440px;
+}
+.container--brands, .container--nopad{
+    padding: 0;
+}
+.container--gray{
+    background-color: #F5F5FA;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+ul{
+    padding-left: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+

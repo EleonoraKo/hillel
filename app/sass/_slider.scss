@@ -1,0 +1,24 @@
+ .my-dots
+ {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    button {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $colourBlue;
+        opacity: 0.2;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: transparent;
+    }
+.slick-active button{
+border: none;
+opacity: 1;
+    }
+   
+}
+li::marker{
+    color: transparent;
+}
